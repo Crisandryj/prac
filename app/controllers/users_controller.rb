@@ -13,6 +13,7 @@ class UsersController < ApplicationController
       redirect_to @user
     else
        render :new, status: :unprocessable_entity
+    end 
   end 
 
   private
@@ -20,4 +21,5 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name,:email,:id)
   end
+
 end

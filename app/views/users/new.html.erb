@@ -1,5 +1,6 @@
 <%= form_with model: @user do |form| %>
-  <%= form.text_field :name %>
-   <%= form.text_field :email %>
+
+  Name:<%= form.text_field :name %>
+  Email: <%= form.text_field :email %>
   <%= form.submit %>
 <% end %>

@@ -1,3 +1,7 @@
 <nav> 
 <a href="https://www.w3schools.com/">Google</a>
+<% @users.each do |u| %>
+ <%= u.name %>
+ <%= u.email %>
+<%end%>
 </nav>
