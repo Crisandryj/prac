@@ -11,6 +11,10 @@
   </head>
 
   <body>
+  <nav> 
+   <p><%= button_to 'Users', users_path, method: :get %></p>
+   <p><%= button_to 'Home', root_path, method: :get %></p>
+  </nav>
     <%= yield %>
   </body>
 </html>
